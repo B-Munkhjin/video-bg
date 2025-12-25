@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+}
+
+/* id gaar edit hiij bn  */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100; /* Keeps video behind content */
+  object-fit: cover;
+  background-size: cover;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3900px;
+  text-align: center;
+}
+.playPause {
+  width: 450px;
+  height: 120px;
+  font-family: "Pacifico", sans-serif;
+  font-size: 97px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70px;
+  position: relative;
+  left: 200px;
+  background-color: lightblue;
+  color: midnightblue;
+}
+.playPause:active {
+  background-color: midnightblue;
+  color: lightblue;
+}
+.text {
+  font-family: "Pacifico", sans-serif;
+  font-size: 250px;
+  color: rgb(202, 223, 242);
+  position: relative;
+  top: 1200px;
+}
